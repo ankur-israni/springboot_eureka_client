@@ -33,3 +33,15 @@ management:
   endpoint:
     health:
       show-details: "ALWAYS"
+---
+#Eureka Server configuration
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9006/eureka
+    instance:
+    preferIpAddress: true
+spring:
+  application:
+    name: ankur_eureka_client
+
